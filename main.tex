@@ -1,0 +1,73 @@
+% Underlying spacing for the whole document:
+% \ssp % Single spaced.
+% \hsp  % Intermediate spacing
+% \dsp  % Double spacing (GSAS requirement)
+\input{preamble.tex}
+\dsp
+\begin{document}
+
+\frontmatter
+
+\graphicspath{{paper1/}{intro/}{future/}{conclusion}}
+%\begin{comment}
+\clearpage
+\input{intro/disedit}
+
+\clearpage
+
+%\part{Part I}
+
+\input{paper2/disedit}
+
+\clearpage
+%\part{Part II}
+
+\input{paper3/disedit}
+
+
+\clearpage
+%\part{Part III}
+
+\input{paper1/disedit}
+
+\clearpage
+%\part{Part IV}
+
+\input{paper4/disedit}
+
+
+\clearpage
+
+\input{paper5/disedit}
+
+
+
+\clearpage
+%\end{comment}
+
+%\part{Future Directions}
+\input{future/future}
+\clearpage
+\input{conclusion/conclusion}
+\clearpage
+\input{AppA/disedit}
+
+\clearpage
+\input{AppB/disedit}
+
+\clearpage
+\input{AppC/disedit}
+
+
+
+\clearpage
+\input{AppD/disedit}
+\clearpage
+\input{biblio/disedit}
+%Bibliography:
+{
+\ssp % Single spacing
+\bibliographystyle{thesis}
+\bibliography{bibliography.bib}
+}
+\end{document}
